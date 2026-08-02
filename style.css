@@ -232,4 +232,34 @@ footer {
 .copy {
     font-size: 0.85rem;
     color: var(--text-muted);
+}/* Animated Gradient Name Style */
+.animated-name {
+    background: linear-gradient(
+        90deg, 
+        #00c6ff, 
+        #0072ff, 
+        #ff00cc, 
+        #00c6ff  
+    );
+    
+    background-size: 300% 100%;
+    
+    -webkit-background-clip: text;
+    background-clip: text;
+    
+    color: transparent;
+       
+    animation: gradient-move 5s ease infinite;
+}
+
+@keyframes gradient-move {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
