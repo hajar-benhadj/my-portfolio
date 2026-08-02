@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hajar Benhadj | Software Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <!-- Background Animated Robot Canvas -->
+    <canvas id="robot-canvas"></canvas>
+
+    <!-- Header / Navbar -->
+    <nav class="navbar">
+        <div class="logo">HB<span>.</span></div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">💻 Aspiring Software Developer</div>
+        <h1>Building clean code & modern <span>web applications</span>.</h1>
+        <p>Hi, I'm Hajar Benhadj. Passionate about web development, problem-solving, and building practical software solutions.</p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn primary">View My Projects <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn secondary">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- Bento Grid (Skills & About) -->
+    <section id="about" class="bento-section">
+        <h2 class="section-title">Overview & Skills ⚡</h2>
+        <div class="bento-grid">
+            
+            <div class="bento-card profile-card">
+                <img src="images/profile.png.jfif" alt="Hajar Benhadj" class="profile-img">
+                <h3>Hajar Benhadj</h3>
+                <p>Frontend & Software Developer</p>
+            </div>
+
+            <div class="bento-card skill-card">
+                <i data-lucide="code-2" class="icon"></i>
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript Basics, Responsive Design & Modern UI Layouts.</p>
+            </div>
+
+            <div class="bento-card skill-card">
+                <i data-lucide="terminal" class="icon"></i>
+                <h3>Problem Solving</h3>
+                <p>Logical thinking, clean code practices, and analytical skills.</p>
+            </div>
+
+            <div class="bento-card skill-card highlight">
+                <i data-lucide="languages" class="icon"></i>
+                <h3>Languages</h3>
+                <p>English, German (B2 Level), Arabic.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2 class="section-title">Featured Projects 🚀</h2>
+        <div class="projects-grid">
+            
+            <div class="project-card">
+                <div class="project-tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+                <h3>Personal Developer Portfolio</h3>
+                <p>A modern personal portfolio built from scratch to showcase my projects and technical journey.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="project-tags"><span>JavaScript</span><span>Upcoming</span></div>
+                <h3>Interactive Web App</h3>
+                <p>Developing functional web applications focused on UI/UX and dynamic user interaction.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <h2>Let's Connect! 🤝</h2>
+        <p>Feel free to reach out for projects, collaborations, or inquiries.</p>
+        <div class="socials">
+            <a href="#"><i data-lucide="linkedin"></i></a>
+            <a href="#"><i data-lucide="github"></i></a>
+            <a href="mailto:hajjarbenhadj@gmail.com"><i data-lucide="mail"></i></a>
+        </div>
+        <p class="copy">&copy; 2026 Hajar Benhadj. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
