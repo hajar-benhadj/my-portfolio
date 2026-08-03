@@ -271,4 +271,31 @@ footer {
     transform: translateY(-6px); 
     box-shadow: 0 10px 30px rgba(0, 198, 255, 0.25); 
     border-color: rgba(0, 198, 255, 0.6); 
+}/* تصميم الكارت منين تولي منسقة ومكبرة (Active/Expanded) */
+.bento-card.expanded {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(1.15) !important;
+    width: 80% !important;
+    max-width: 500px !important;
+    z-index: 1000 !important;
+    box-shadow: 0 0 50px rgba(0, 198, 255, 0.6) !important;
+    border-color: #00c6ff !important;
+    background: #111827 !important; /* لون خلفية واضح باش تبان مزيان */
+}
+
+/* خلفية مظلمة كتابع الكارت منين تكبر باش تركز غير عليها */
+.bento-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+.bento-overlay.active {
+    display: block;
 }
