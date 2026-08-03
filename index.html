@@ -141,5 +141,32 @@
     <script>
         lucide.createIcons();
     </script>
+    <script>
+    const overlay = document.createElement('div');
+    overlay.className = 'bento-overlay';
+    document.body.appendChild(overlay);
+
+    const cards = document.querySelectorAll('.bento-card');
+
+    cards.card_click = cards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isActive = card.classList.contains('expanded');
+            
+            cards.forEach(c => c.classList.remove('expanded'));
+            overlay.classList.remove('active');
+
+            if (!isActive) {
+                card.classList.add('expanded');
+                overlay.classList.add('active');
+            }
+        });
+    });
+
+    overlay.addEventListener('click', () => {
+        cards.forEach(c => c.classList.remove('expanded'));
+        overlay.classList.remove('active');
+    });
+</script>
 </body>
 </html>
