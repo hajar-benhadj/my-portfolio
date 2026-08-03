@@ -18,11 +18,11 @@
     <nav class="navbar">
         <div class="logo">HB<span>.</span></div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" class="btn-nav">Contact</a></li>
-        </ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#about">Skills</a></li> <!-- هكا باش منين تكليكي تنزل لsection ديال المهارات -->
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact" class="btn-nav">Contact</a></li>
+</ul>
     </nav>
 
    <!-- Hero Section (Modified with animation class) -->
@@ -45,11 +45,18 @@
         <h2 class="section-title">About Me & Skills ⚡</h2>
         <div class="bento-grid">
             
+            <!-- Profile Image Card  -->
+            <div class="bento-card profile-card">
+                <img src="images/profile.png.jfif" alt="Hajar Benhadj" class="profile-img" style="width: 100%; border-radius: 12px; margin-bottom: 12px;">
+                <h3 style="font-size: 1.2rem;">Hajar Benhadj</h3>
+                <p style="color: #a0aec0; font-size: 0.9rem;">Frontend & Software Developer</p>
+            </div>
+
             <!-- Bio Card (About) -->
-            <div class="bento-card profile-card" style="grid-column: span 2;">
+            <div class="bento-card skill-card">
                 <h3>Who I Am</h3>
-                <p style="color: #a0aec0; line-height: 1.6; margin-top: 10px;">
-                    Aspiring software developer with a strong analytical mindset. Passionate about building clean, responsive web applications, writing structured code, and exploring practical automation technologies to solve real-world challenges.
+                <p style="color: #a0aec0; font-size: 0.9rem; line-height: 1.5; margin-top: 8px;">
+                    Aspiring software developer with a strong analytical mindset. Passionate about building clean web applications and exploring automation technologies.
                 </p>
             </div>
 
@@ -57,28 +64,28 @@
             <div class="bento-card skill-card">
                 <i data-lucide="code-2" class="icon"></i>
                 <h3>Frontend Development</h3>
-                <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 8px;">HTML5, CSS3, JavaScript (ES6+), Responsive Design, and Modern UI Layouts.</p>
+                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">HTML5, CSS3, JavaScript (ES6+), Responsive Design.</p>
             </div>
 
             <!-- Skills Card: Tools & Workflow -->
             <div class="bento-card skill-card">
                 <i data-lucide="git-branch" class="icon"></i>
                 <h3>Tools & Workflow</h3>
-                <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 8px;">Git, GitHub, VS Code, Browser Developer Tools, and Version Control.</p>
+                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">Git, GitHub, VS Code, Browser Developer Tools.</p>
             </div>
 
             <!-- Skills Card: Problem Solving -->
             <div class="bento-card skill-card">
                 <i data-lucide="terminal" class="icon"></i>
                 <h3>Problem Solving</h3>
-                <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 8px;">Logical thinking, debugging, clean code practices, and analytical planning.</p>
+                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">Logical thinking, debugging, clean code practices.</p>
             </div>
 
             <!-- Skills Card: Languages (Highlight) -->
             <div class="bento-card skill-card highlight">
                 <i data-lucide="languages" class="icon"></i>
                 <h3>Languages</h3>
-                <p style="color: #a0aec0; font-size: 0.9rem; margin-top: 8px;">English (Professional), German (B2 Level), Arabic (Native).</p>
+                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">English, German (B2 Level), Arabic.</p>
             </div>
 
         </div>
