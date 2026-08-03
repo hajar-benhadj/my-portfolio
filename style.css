@@ -271,7 +271,7 @@ footer {
     transform: translateY(-6px); 
     box-shadow: 0 10px 30px rgba(0, 198, 255, 0.25); 
     border-color: rgba(0, 198, 255, 0.6); 
-}/* تصميم الكارت منين تولي منسقة ومكبرة (Active/Expanded) */
+}
 .bento-card.expanded {
     position: fixed !important;
     top: 50% !important;
@@ -282,10 +282,9 @@ footer {
     z-index: 1000 !important;
     box-shadow: 0 0 50px rgba(0, 198, 255, 0.6) !important;
     border-color: #00c6ff !important;
-    background: #111827 !important; /* لون خلفية واضح باش تبان مزيان */
+    background: #111827 !important;
 }
 
-/* خلفية مظلمة كتابع الكارت منين تكبر باش تركز غير عليها */
 .bento-overlay {
     position: fixed;
     top: 0;
