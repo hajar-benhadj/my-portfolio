@@ -52,8 +52,8 @@ const mouse = {
 };
 
 window.addEventListener('mousemove', (event) => {
-    mouse.x = event.x;
-    mouse.y = event.y;
+    mouse.x = event.clientX;
+    mouse.y = event.clientY;
 });
 
 class RobotParticle {
@@ -149,3 +149,37 @@ function animate() {
 
 init();
 animate();
+
+
+// 4. Interactive Bento Cards Logic 
+document.addEventListener('DOMContentLoaded', () => {
+    // (Overlay) 
+    let overlay = document.querySelector('.bento-overlay');
+    if (!overlay) {
+        overlay = document.createElement('div');
+        overlay.className = 'bento-overlay';
+        document.body.appendChild(overlay);
+    }
+
+    const interactiveCards = document.querySelectorAll('.interactive-card');
+
+    interactiveCards.forEach(card => {
+        card.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isActive = card.classList.contains('expanded');
+
+            interactiveCards.forEach(c => c.classList.remove('expanded'));
+            overlay.classList.remove('active');
+
+            if (!isActive) {
+                card.classList.add('expanded');
+                overlay.classList.add('active');
+            }
+        });
+    });
+
+    overlay.addEventListener('click', () => {
+        interactiveCards.forEach(c => c.classList.remove('expanded'));
+        overlay.classList.remove('active');
+    });
+});
