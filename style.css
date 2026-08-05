@@ -211,6 +211,7 @@ body {
     margin-right: 6px;
     margin-bottom: 10px;
 }
+
 /* Footer */
 footer {
     text-align: center;
@@ -232,7 +233,9 @@ footer {
 .copy {
     font-size: 0.85rem;
     color: var(--text-muted);
-}/* Animated Gradient Name Style */
+}
+
+/* Animated Gradient Name Style */
 .animated-name {
     background: linear-gradient(
         90deg, 
@@ -241,28 +244,19 @@ footer {
         #ff00cc, 
         #00c6ff  
     );
-    
     background-size: 300% 100%;
-    
     -webkit-background-clip: text;
     background-clip: text;
-    
     color: transparent;
-       
     animation: gradient-move 5s ease infinite;
 }
 
 @keyframes gradient-move {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
+
 .bento-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
@@ -272,6 +266,7 @@ footer {
     box-shadow: 0 10px 30px rgba(0, 198, 255, 0.25); 
     border-color: rgba(0, 198, 255, 0.6); 
 }
+
 .bento-card.expanded {
     position: fixed !important;
     top: 50% !important;
@@ -295,11 +290,12 @@ footer {
     z-index: 999;
     display: none;
 }
+
 .bento-overlay.active {
     display: block;
 }
-/* --- Interactive Cards Styling --- */
 
+/* --- Interactive Cards Styling --- */
 .interactive-card {
     cursor: pointer;
     transition: all 0.3s ease;
@@ -453,7 +449,8 @@ footer {
     transform: rotate(180deg);
     color: #a5b4fc;
 }
-}
+
+/* Portfolio Banner Style */
 .portfolio-banner {
     background: #0f172a;
     border: 1px solid rgba(99, 102, 241, 0.3);
