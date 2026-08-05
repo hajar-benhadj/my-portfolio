@@ -18,29 +18,29 @@
     <nav class="navbar">
         <div class="logo">HB<span>.</span></div>
         <ul class="nav-links">
-    <li><a href="#about">About</a></li>
-    <li><a href="#about">Skills</a></li> <!-- هكا باش منين تكليكي تنزل لsection ديال المهارات -->
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#contact" class="btn-nav">Contact</a></li>
-</ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#about">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact" class="btn-nav">Contact</a></li>
+        </ul>
     </nav>
 
-   <!-- Hero Section (Modified with animation class) -->
-<section class="hero">
-    <div class="badge">💻 Aspiring Software Developer</div>
-    <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
-        Hi, I'm <span class="animated-name">Hajar Benhadj</span>
-    </h1>
-    <p style="font-size: 1.2rem; margin-bottom: 30px;">
-        Passionate about building clean code, modern <span>web applications</span>, and practical software solutions.
-    </p>
-    <div class="hero-btns">
-        <a href="#projects" class="btn primary">View My Projects <i data-lucide="arrow-up-right"></i></a>
-        <a href="#contact" class="btn secondary">Get In Touch</a>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="badge">💻 Aspiring Software Developer</div>
+        <h1 style="font-size: 3.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 20px;">
+            Hi, I'm <span class="animated-name">Hajar Benhadj</span>
+        </h1>
+        <p style="font-size: 1.2rem; margin-bottom: 30px;">
+            Passionate about building clean code, modern <span>web applications</span>, and practical software solutions.
+        </p>
+        <div class="hero-btns">
+            <a href="#projects" class="btn primary">View My Projects <i data-lucide="arrow-up-right"></i></a>
+            <a href="#contact" class="btn secondary">Get In Touch</a>
+        </div>
+    </section>
 
-<!-- About & Skills Section (Modified for Interactive Cards) -->
+    <!-- About & Skills Section -->
     <section id="about" class="bento-section">
         <h2 class="section-title">About Me & Skills ⚡</h2>
         <div class="bento-grid">
@@ -52,7 +52,7 @@
                 <p style="color: #a0aec0; font-size: 0.9rem;">Software Developer & Automation</p>
             </div>
 
-           <!-- 1. Interactive "Who I Am" Card -->
+            <!-- 1. Interactive "Who I Am" Card -->
             <div class="bento-card skill-card interactive-card" id="whoami-card">
                 <div class="card-header">
                     <h3>Who I Am</h3>
@@ -60,7 +60,7 @@
                 <div class="card-content-collapsed">
                     <p>Software developer with a strong analytical mindset...</p>
                     <button class="read-more-btn">
-                        <span>اقرأ المزيد</span>
+                        <span>Read More</span>
                         <svg class="expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -80,7 +80,7 @@
                 <div class="card-content-collapsed">
                     <p>Frontend • Backend • AI Tools • Languages</p>
                     <button class="read-more-btn">
-                        <span>اقرأ المزيد</span>
+                        <span>Read More</span>
                         <svg class="expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
@@ -106,8 +106,6 @@
                 </div>
             </div>
 
-            <!-- Languages Card (Skills) -->
-
         </div>
     </section>
 
@@ -118,7 +116,7 @@
             
             <!-- Project 1: SmartLogix Dashboard -->
             <div class="project-card">
-<img src="images/smartlogix.png" alt="SmartLogix Dashboard" style="width:100%; border-radius:8px; margin-bottom:12px;">
+                <img src="images/smartlogix.png" alt="SmartLogix Dashboard" style="width:100%; border-radius:8px; margin-bottom:12px;">
                 <div class="project-tags">
                     <span>HTML5</span>
                     <span>CSS3</span>
@@ -132,7 +130,7 @@
                 </div>
             </div>
             
-          <!-- Project 2: Personal Portfolio -->
+            <!-- Project 2: Personal Portfolio -->
             <div class="project-card">
                 <div class="project-tags">
                     <span>HTML/CSS</span>
@@ -141,11 +139,8 @@
                 <h3>Personal Developer Portfolio</h3>
                 <p>A modern personal portfolio built from scratch to showcase my projects and technical journey.</p>
             </div>
-            
-        </div>
-    </section>
-            
-<!-- Project: AI API Test Generator -->
+
+            <!-- Project 3: AI API Test Generator (تم إدخالها هنا داخل الشبكة بشكل صحيح) -->
             <div class="project-card">
                 <div style="background: linear-gradient(135deg, #1e1e2f, #2a2a40); height: 140px; border-radius: 8px; margin-bottom: 12px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0, 198, 255, 0.3);">
                     <span style="font-size: 1.8rem; font-weight: 800; color: #00c6ff;">AI & Pytest 🚀</span>
@@ -162,7 +157,9 @@
                     <a href="https://github.com/hajar-benhadj/AI-API-TEST-GENERATOR" target="_blank" class="btn secondary" style="padding: 8px 15px; font-size: 14px;">GitHub</a>
                 </div>
             </div>
-            
+
+        </div>
+    </section>
 
     <!-- Footer -->
     <footer id="contact">
@@ -180,32 +177,5 @@
     <script>
         lucide.createIcons();
     </script>
-    <script>
-    const overlay = document.createElement('div');
-    overlay.className = 'bento-overlay';
-    document.body.appendChild(overlay);
-
-    const cards = document.querySelectorAll('.bento-card');
-
-    cards.card_click = cards.forEach(card => {
-        card.addEventListener('click', (e) => {
-            e.stopPropagation();
-            const isActive = card.classList.contains('expanded');
-            
-            cards.forEach(c => c.classList.remove('expanded'));
-            overlay.classList.remove('active');
-
-            if (!isActive) {
-                card.classList.add('expanded');
-                overlay.classList.add('active');
-            }
-        });
-    });
-
-    overlay.addEventListener('click', () => {
-        cards.forEach(c => c.classList.remove('expanded'));
-        overlay.classList.remove('active');
-    });
-</script>
 </body>
 </html>
