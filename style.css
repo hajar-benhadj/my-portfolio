@@ -454,3 +454,57 @@ footer {
     color: #a5b4fc;
 }
 }
+.portfolio-banner {
+    background: #0f172a;
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.banner-header {
+    background: #1e293b;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #f59e0b; }
+.dot.green { background: #10b981; }
+
+.banner-title {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: #94a3b8;
+}
+
+.banner-body {
+    padding: 15px;
+    font-size: 0.85rem;
+    color: #e2e8f0;
+    line-height: 1.5;
+}
+
+.banner-body .keyword {
+    color: #c084fc;
+}
+
+.banner-body .string {
+    color: #34d399;
+}
+
+.banner-body .indent {
+    padding-left: 20px;
+}
