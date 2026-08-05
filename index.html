@@ -40,53 +40,63 @@
     </div>
 </section>
 
-<!-- About & Skills Section -->
+<!-- About & Skills Section (Modified for Interactive Cards) -->
     <section id="about" class="bento-section">
         <h2 class="section-title">About Me & Skills ⚡</h2>
         <div class="bento-grid">
             
-            <!-- Profile Image Card  -->
-        <div class="bento-card profile-card" style="text-align: center;">
-    <img src="images/profile.png.jfif" alt="Hajar Benhadj" class="profile-img" style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(0, 198, 255, 0.5); margin: 0 auto 12px auto; display: block;">
-    <h3 style="font-size: 1.2rem;">Hajar Benhadj</h3>
-    <p style="color: #a0aec0; font-size: 0.9rem;">Software Developer & Automation</p>
-</div>
-
-            <!-- Bio Card (About) -->
-            <div class="bento-card skill-card">
-                <h3>Who I Am</h3>
-                <p style="color: #a0aec0; font-size: 0.9rem; line-height: 1.5; margin-top: 8px;">
-                    Software developer with a strong analytical mindset. Passionate about building clean web applications, backend automation, and AI-powered tools.
-                </p>
+            <!-- Profile Image Card -->
+            <div class="bento-card profile-card" style="text-align: center;">
+                <img src="images/profile.png.jfif" alt="Hajar Benhadj" class="profile-img" style="width: 130px; height: 130px; object-fit: cover; border-radius: 50%; border: 3px solid rgba(0, 198, 255, 0.5); margin: 0 auto 12px auto; display: block;">
+                <h3 style="font-size: 1.2rem;">Hajar Benhadj</h3>
+                <p style="color: #a0aec0; font-size: 0.9rem;">Software Developer & Automation</p>
             </div>
 
-            <!-- Skills Card: Frontend -->
-            <div class="bento-card skill-card">
-                <i data-lucide="code-2" class="icon"></i>
-                <h3>Frontend Development</h3>
-                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">HTML5, CSS3, JavaScript (ES6+), Responsive Design.</p>
+            <!-- 1. Interactive "Who I Am" Card -->
+            <div class="bento-card skill-card interactive-card" id="whoami-card">
+                <div class="card-header">
+                    <h3>Who I Am</h3>
+                    <i data-lucide="chevron-down" class="expand-icon"></i>
+                </div>
+                <div class="card-content-collapsed">
+                    <p>Software developer with a strong analytical mindset...</p>
+                </div>
+                <div class="card-content-expanded">
+                    <p>Software developer with a strong analytical mindset. Passionate about building clean web applications, backend automation, and AI-powered tools.</p>
+                    <p style="margin-top: 10px;">Always eager to learn new technologies and solve complex problems efficiently. Currently focusing on expanding skills in full-stack development and cloud technologies.</p>
+                </div>
             </div>
 
-            <!-- Skills Card: Backend & Testing (New!) -->
-            <div class="bento-card skill-card">
-                <i data-lucide="terminal" class="icon"></i>
-                <h3>Backend & Testing</h3>
-                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">Python, Pytest, API Testing, Swagger / OpenAPI.</p>
+            <!-- 2. Interactive "My Skills" Card -->
+            <div class="bento-card skill-card interactive-card highlight" id="skills-card">
+                <div class="card-header">
+                    <h3>My Skills</h3>
+                    <i data-lucide="chevron-down" class="expand-icon"></i>
+                </div>
+                <div class="card-content-collapsed">
+                    <p>Frontend • Backend • AI Tools • Languages</p>
+                </div>
+                <div class="card-content-expanded skill-list-detailed">
+                    <div class="skill-cat">
+                        <h4><i data-lucide="code-2"></i> Frontend</h4>
+                        <span>HTML5, CSS3, JavaScript (ES6+), Responsive Design.</span>
+                    </div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="terminal"></i> Backend & Testing</h4>
+                        <span>Python, Pytest, API Testing, Swagger / OpenAPI.</span>
+                    </div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="git-branch"></i> AI & Tools</h4>
+                        <span>OpenAI API, Git, GitHub, VS Code.</span>
+                    </div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="languages"></i> Languages</h4>
+                        <span>English, German (B2), Arabic.</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Skills Card: AI & Tools -->
-            <div class="bento-card skill-card">
-                <i data-lucide="git-branch" class="icon"></i>
-                <h3>AI & Dev Tools</h3>
-                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">OpenAI API, Git, GitHub, VS Code.</p>
-            </div>
-
-            <!-- Skills Card: Languages (Highlight) -->
-            <div class="bento-card skill-card highlight">
-                <i data-lucide="languages" class="icon"></i>
-                <h3>Languages</h3>
-                <p style="color: #a0aec0; font-size: 0.85rem; margin-top: 6px;">English, German, French, Arabic.</p>
-            </div>
+            <!-- Languages Card (Skills) -->
 
         </div>
     </section>
