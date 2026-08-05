@@ -298,3 +298,110 @@ footer {
 .bento-overlay.active {
     display: block;
 }
+/* --- Interactive Cards Styling --- */
+
+.interactive-card {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden; 
+}
+
+.interactive-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px -10px rgba(0, 198, 255, 0.3);
+}
+
+.interactive-card .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.interactive-card .expand-icon {
+    width: 20px;
+    height: 20px;
+    color: #a0aec0;
+    transition: transform 0.3s ease; 
+}
+
+.interactive-card .card-content-collapsed {
+    color: #a0aec0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 1;
+    max-height: 100px; 
+    transition: opacity 0.3s ease;
+}
+
+.interactive-card .card-content-expanded {
+    display: none; 
+    color: #a0aec0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 15px;
+}
+
+.interactive-card.expanded {
+    grid-column: span 2; 
+    background: #1a1a2e; 
+}
+
+/* السهم كيتقلب */
+.interactive-card.expanded .expand-icon {
+    transform: rotate(180deg);
+}
+
+/* المحتوى المضغوط كيختفي */
+.interactive-card.expanded .card-content-collapsed {
+    display: none;
+}
+
+.interactive-card.expanded .card-content-expanded {
+    display: block;
+    animation: fadeIn 0.5s ease; 
+}
+
+.skill-list-detailed {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 15px;
+}
+
+.skill-cat h4 {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.skill-cat h4 svg {
+    width: 18px;
+    height: 18px;
+    color: #00c6ff;
+}
+
+.skill-cat span {
+    font-size: 0.85rem;
+    padding-left: 26px; 
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .interactive-card.expanded {
+        grid-column: span 1; 
+    }
+    .skill-list-detailed {
+        grid-template-columns: 1fr; 
+    }
+}
