@@ -350,12 +350,10 @@ footer {
     background: #1a1a2e; 
 }
 
-/* السهم كيتقلب */
 .interactive-card.expanded .expand-icon {
     transform: rotate(180deg);
 }
 
-/* المحتوى المضغوط كيختفي */
 .interactive-card.expanded .card-content-collapsed {
     display: none;
 }
@@ -404,4 +402,49 @@ footer {
     .skill-list-detailed {
         grid-template-columns: 1fr; 
     }
+}
+.read-more-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.15), rgba(0, 198, 255, 0.15));
+    border: 1px solid rgba(99, 102, 241, 0.4);
+    color: #00c6ff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+}
+
+.read-more-btn:hover {
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(0, 198, 255, 0.3));
+    border-color: #00c6ff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 198, 255, 0.2);
+}
+
+.read-more-btn svg {
+    width: 16px;
+    height: 16px;
+    transition: transform 0.3s ease;
+}
+
+.interactive-card.expanded .read-more-btn span::before {
+    content: "إغلاق";
+}
+.interactive-card.expanded .read-more-btn span {
+    visibility: hidden;
+    position: relative;
+}
+.interactive-card.expanded .read-more-btn span::before {
+    visibility: visible;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.interactive-card.expanded .read-more-btn svg {
+    transform: rotate(180deg);
 }
