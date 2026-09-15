@@ -118,7 +118,49 @@
     <section id="projects" class="projects-section">
         <h2 class="section-title">Featured Projects 🚀</h2>
         <div class="projects-grid">
-            
+
+            <!-- Project 0: Business Autopilot Kit (n8n Automation Pack) -->
+            <div class="project-card">
+                <!-- Animated Workflow Header -->
+                <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0, 198, 255, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.1);">
+
+                    <!-- Live Automation Badge -->
+                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
+                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
+                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">AUTOPILOT ON</span>
+                    </div>
+
+                    <!-- Workflow pipeline: Sheet -> n8n -> Gmail -->
+                    <div style="display: flex; align-items: center; gap: 8px; margin-top: 10px; font-family: monospace; font-size: 0.72rem; font-weight: 700;">
+                        <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid #10b981; color: #6ee7b7; padding: 6px 10px; border-radius: 8px;">📋 Sheet</div>
+                        <div class="flow-line"></div>
+                        <div style="background: rgba(245, 158, 11, 0.12); border: 1px solid #f59e0b; color: #fcd34d; padding: 6px 10px; border-radius: 8px;">⚙️ n8n</div>
+                        <div class="flow-line"></div>
+                        <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid #ef4444; color: #fca5a5; padding: 6px 10px; border-radius: 8px;">✉️ Gmail</div>
+                    </div>
+
+                    <!-- Floating Pack Badge -->
+                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(0, 198, 255, 0.15); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 198, 255, 0.3); font-size: 0.7rem; color: #7dd3fc;">
+                        6× workflows
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span>n8n</span>
+                    <span>Automation</span>
+                    <span>JavaScript</span>
+                    <span>OpenAI API</span>
+                </div>
+
+                <h3>Business Autopilot Kit — n8n Automation Pack</h3>
+                <p>A digital product: 6 production-ready n8n automations that send invoices, chase late payments on autopilot, and brief your inbox with AI. Free edition open-sourced on GitHub — full kit with setup guide sold on Gumroad.</p>
+
+                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <a href="https://github.com/hajar-benhadj/business-autopilot-kit" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                    <a href="https://hajarbenhadj.gumroad.com/l/business-autopilot-kit" target="_blank" class="btn secondary" style="padding: 8px 15px; font-size: 14px; text-align: center;">Get the Kit 🛒</a>
+                </div>
+            </div>
+
             <!-- Project 1: SmartLogix Dashboard -->
             <div class="project-card">
                 <img src="images/smartlogix.png" alt="SmartLogix Dashboard" style="width:100%; border-radius:8px; margin-bottom:12px;">
@@ -244,6 +286,16 @@
                     0% { transform: scale(0.95); opacity: 0.8; }
                     50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #ef4444; }
                     100% { transform: scale(0.95); opacity: 0.8; }
+                }
+                .flow-line {
+                    width: 26px;
+                    height: 2px;
+                    background-image: repeating-linear-gradient(90deg, #38bdf8 0 6px, transparent 6px 12px);
+                    animation: flowDash 0.8s linear infinite;
+                }
+                @keyframes flowDash {
+                    from { background-position: 0 0; }
+                    to { background-position: 12px 0; }
                 }
             </style>
             
