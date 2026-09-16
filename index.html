@@ -84,7 +84,7 @@
                     <h3>My Skills</h3>
                 </div>
                 <div class="card-content-collapsed">
-                    <p>6 domains · 4 languages · one automation habit ✨</p>
+                    <p>A focused stack, battle-tested on real projects</p>
                     <button class="read-more-btn">
                         <span>Read More</span>
                         <svg class="expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -93,35 +93,29 @@
                     </button>
                 </div>
                 <div class="card-content-expanded skill-list-detailed">
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>🐍 Python</span><span class="skillbar-sub">API testing · automation scripts</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 88%;"></div></div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="code-2"></i> Languages &amp; Web</h4>
+                        <span>Python · JavaScript (ES6+) · HTML5 · CSS3</span>
                     </div>
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>⚡ JavaScript</span><span class="skillbar-sub">ES6+ · PWA · interactive UI</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 82%; animation-delay: .15s;"></div></div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="terminal"></i> Testing &amp; APIs</h4>
+                        <span>Pytest · API Testing · Swagger / OpenAPI</span>
                     </div>
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>🤖 AI Tools</span><span class="skillbar-sub">OpenAI API · n8n · prompt design</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 78%; animation-delay: .3s;"></div></div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="bot"></i> AI &amp; Automation</h4>
+                        <span>OpenAI API · n8n · Workflow Automation</span>
                     </div>
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>👁️ Computer Vision</span><span class="skillbar-sub">OpenCV · MediaPipe</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 72%; animation-delay: .45s;"></div></div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="eye"></i> Computer Vision</h4>
+                        <span>OpenCV · MediaPipe · Pose Estimation</span>
                     </div>
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>🎨 Web Foundations</span><span class="skillbar-sub">HTML5 · CSS3 · responsive</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 80%; animation-delay: .6s;"></div></div>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="git-branch"></i> Tools &amp; Workflow</h4>
+                        <span>Git · GitHub · VS Code</span>
                     </div>
-                    <div class="skillbar">
-                        <div class="skillbar-top"><span>🔧 Workflow</span><span class="skillbar-sub">Git · GitHub · VS Code · Pytest</span></div>
-                        <div class="skillbar-track"><div class="skillbar-fill" style="--target: 90%; animation-delay: .75s;"></div></div>
-                    </div>
-                    <div class="lang-row" style="margin-top: 14px;">
-                        <span class="lang-pill">🇲🇦 Arabic · native</span>
-                        <span class="lang-pill">🇫🇷 French</span>
-                        <span class="lang-pill">🇬🇧 English</span>
-                        <span class="lang-pill">🇩🇪 German</span>
+                    <div class="skill-cat">
+                        <h4><i data-lucide="languages"></i> Languages</h4>
+                        <span>Arabic (native) · French · English · German</span>
                     </div>
                 </div>
             </div>
@@ -134,22 +128,6 @@
                     padding: 5px 12px; border-radius: 999px;
                     background: rgba(0, 198, 255, .1); border: 1px solid rgba(0, 198, 255, .35); color: #7dd3fc;
                 }
-                .skillbar { margin-bottom: 12px; }
-                .skillbar-top { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; font-size: 0.85rem; font-weight: 700; margin-bottom: 5px; }
-                .skillbar-sub { font-size: 0.72rem; font-weight: 500; color: #94a3b8; text-align: right; }
-                .skillbar-track { height: 8px; border-radius: 999px; background: rgba(148, 163, 184, .15); overflow: hidden; }
-                .skillbar-fill {
-                    height: 100%; width: 0; border-radius: 999px;
-                    background: linear-gradient(90deg, #00c6ff, #7c3aed);
-                    animation: growBar 1.3s cubic-bezier(.22,.8,.36,1) forwards;
-                }
-                @keyframes growBar { to { width: var(--target); } }
-                .lang-row { display: flex; flex-wrap: wrap; gap: 8px; }
-                .lang-pill {
-                    font-size: 0.75rem; font-weight: 600; padding: 4px 11px; border-radius: 999px;
-                    background: rgba(168, 85, 247, .12); border: 1px solid rgba(168, 85, 247, .35); color: #d8b4fe;
-                }
-                @media (max-width: 420px) { .skillbar-sub { display: none; } }
             </style>
 
         </div>
