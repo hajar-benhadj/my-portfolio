@@ -67,7 +67,7 @@
                     </button>
                 </div>
                 <div class="card-content-expanded">
-                    <p>Software developer with a builder mindset — I ship complete products, not just code: a paid <strong>n8n automation pack</strong> for small businesses, <strong>CV Lens</strong> — an ATS CV checker with server-side AI that job seekers use for free, and an offline-capable <strong>German-learning PWA</strong> with an AI tutor.</p>
+                    <p>Software developer with a builder mindset — I ship complete products, not just code: a paid <strong>n8n automation pack</strong> for small businesses, <strong>CV Lens</strong> — an ATS CV checker with server-side AI that job seekers use for free, an offline-capable <strong>German-learning PWA</strong> with an AI tutor, and <strong>RepoDoctor</strong> — a static-analysis engine that diagnoses GitHub repositories.</p>
                     <p style="margin-top: 10px;">Behind the scenes: clean code, tested APIs, privacy-first architecture, and automations that quietly do the routine work.</p>
                     <p style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;"><strong>Focus:</strong> AI-powered web apps &middot; Automation &middot; Product building</p>
                     <p style="margin-top: 6px;"><strong>Currently:</strong> expanding into full-stack &amp; cloud — open to freelance automation and AI tooling work</p>
@@ -91,7 +91,7 @@
                 <div class="card-content-expanded skill-list-detailed">
                     <div class="skill-cat">
                         <h4><i data-lucide="code-2"></i> Languages &amp; Web</h4>
-                        <span>Python · JavaScript (ES6+) · HTML5 · CSS3</span>
+                        <span>TypeScript · Python · JavaScript (ES6+) · Next.js · HTML5 · CSS3</span>
                     </div>
                     <div class="skill-cat">
                         <h4><i data-lucide="bot"></i> AI &amp; Automation</h4>
@@ -130,6 +130,77 @@
     <section id="projects" class="projects-section">
         <h2 class="section-title">Featured Projects 🚀</h2>
         <div class="projects-grid">
+
+            <!-- Project RD: RepoDoctor (GitHub Repository Health Analyzer) -->
+            <div class="project-card">
+                <!-- Medical analysis themed Animated Header -->
+                <div style="background: linear-gradient(135deg, #090d16, #0c1712); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(52, 211, 153, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(52, 211, 153, 0.1);">
+
+                    <!-- Zero-dep engine badge -->
+                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
+                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
+                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">ZERO-DEP ENGINE</span>
+                    </div>
+
+                    <!-- Grade badge -->
+                    <div style="position: absolute; top: 10px; right: 12px; background: rgba(52, 211, 153, 0.15); padding: 3px 9px; border-radius: 4px; border: 1px solid rgba(52, 211, 153, 0.35); font-size: 0.7rem; font-weight: 700; color: #6ee7b7; font-family: monospace;">
+                        🩺 A · 89%
+                    </div>
+
+                    <!-- 5 animated vitals bars (real output from commander.js diagnosis) -->
+                    <div style="display: flex; flex-direction: column; gap: 6px; width: 280px; margin-top: 12px; font-family: monospace; font-size: 0.68rem; font-weight: 700; color: #94a3b8;">
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 62px; text-align: right;">quality</span>
+                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
+                                <div class="vital-fill" style="width: 76%; background: linear-gradient(90deg, #0284c7, #38bdf8); animation-delay: 0.1s;"></div>
+                            </div>
+                            <span style="width: 30px; color: #7dd3fc;">76%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 62px; text-align: right;">security</span>
+                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
+                                <div class="vital-fill" style="width: 90%; background: linear-gradient(90deg, #e11d48, #fb7185); animation-delay: 0.25s;"></div>
+                            </div>
+                            <span style="width: 30px; color: #fda4af;">90%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 62px; text-align: right;">testing</span>
+                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
+                                <div class="vital-fill" style="width: 99%; background: linear-gradient(90deg, #059669, #34d399); animation-delay: 0.4s;"></div>
+                            </div>
+                            <span style="width: 30px; color: #6ee7b7;">99%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 62px; text-align: right;">docs</span>
+                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
+                                <div class="vital-fill" style="width: 90%; background: linear-gradient(90deg, #d97706, #fbbf24); animation-delay: 0.55s;"></div>
+                            </div>
+                            <span style="width: 30px; color: #fcd34d;">90%</span>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 8px;">
+                            <span style="width: 62px; text-align: right;">maintain.</span>
+                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
+                                <div class="vital-fill" style="width: 96%; background: linear-gradient(90deg, #7c3aed, #a78bfa); animation-delay: 0.7s;"></div>
+                            </div>
+                            <span style="width: 30px; color: #c4b5fd;">96%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span>Next.js</span>
+                    <span>TypeScript</span>
+                    <span>Static Analysis</span>
+                    <span>OSV.dev</span>
+                </div>
+
+                <h3>RepoDoctor — GitHub Repository Health Analyzer</h3>
+                <p>Paste any public GitHub repo and get a medical report for your codebase: explainable scores for quality, security, docs, testing &amp; maintainability, secret &amp; CVE detection (OSV.dev against your exact lockfile), an architecture graph with cycle detection, and a prioritized prescription — plus head-to-head repo duels with a shareable card.</p>
+
+                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <a href="https://github.com/hajar-benhadj/repodoctor" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                </div>
+            </div>
 
             <!-- Project 0: Business Autopilot Kit (n8n Automation Pack) -->
             <div class="project-card">
@@ -367,6 +438,16 @@
                 @keyframes ringPulse {
                     0%, 100% { stroke-dashoffset: 45; }
                     50% { stroke-dashoffset: 78; }
+                }
+                .vital-fill {
+                    height: 100%;
+                    border-radius: 4px;
+                    transform-origin: left;
+                    animation: barGrow 1.4s cubic-bezier(.22, 1, .36, 1) both;
+                }
+                @keyframes barGrow {
+                    from { transform: scaleX(0); }
+                    to { transform: scaleX(1); }
                 }
             </style>
             
