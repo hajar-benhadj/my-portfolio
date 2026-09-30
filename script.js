@@ -183,3 +183,19 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.classList.remove('active');
     });
 });
+
+// RepoDoctor vitals: replay the bar-growth animation every time the card
+// scrolls into view (otherwise it plays once at page load and looks static).
+const rdVitals = document.getElementById('rd-vitals');
+if (rdVitals) {
+    if ('IntersectionObserver' in window) {
+        const vitalsObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                rdVitals.classList.toggle('vitals-live', entry.isIntersecting);
+            });
+        }, { threshold: 0.35 });
+        vitalsObserver.observe(rdVitals);
+    } else {
+        rdVitals.classList.add('vitals-live');
+    }
+}

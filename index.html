@@ -148,7 +148,7 @@
                     </div>
 
                     <!-- 5 animated vitals bars (real output from commander.js diagnosis) -->
-                    <div style="display: flex; flex-direction: column; gap: 5px; width: 100%; max-width: 300px; font-family: monospace; font-size: 0.68rem; font-weight: 700; color: #94a3b8;">
+                    <div id="rd-vitals" style="display: flex; flex-direction: column; gap: 5px; width: 100%; max-width: 300px; font-family: monospace; font-size: 0.68rem; font-weight: 700; color: #94a3b8;">
                         <div style="display: flex; align-items: center; gap: 8px;">
                             <span style="width: 62px; text-align: right;">quality</span>
                             <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
@@ -443,6 +443,9 @@
                     height: 100%;
                     border-radius: 4px;
                     transform-origin: left;
+                    transform: scaleX(0);
+                }
+                .vitals-live .vital-fill {
                     animation: barGrow 1.4s cubic-bezier(.22, 1, .36, 1) both;
                 }
                 @keyframes barGrow {
@@ -466,7 +469,7 @@
         <p class="copy">&copy; 2026 Hajar Benhadj. All rights reserved.</p>
     </footer>
     
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
     <script>
         lucide.createIcons();
     </script>
