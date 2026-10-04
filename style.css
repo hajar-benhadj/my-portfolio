@@ -630,7 +630,7 @@ footer {
 }
 
 /* ═══ Project flows: name → spider-web → description → web → actions ═══ */
-.projects-flow { display: flex; flex-direction: column; gap: 64px; }
+.projects-flow { display: flex; flex-direction: column; gap: 130px; }
 
 .project-flow {
     display: grid;
@@ -673,9 +673,6 @@ footer {
 .flow-index {
     display: inline-block; margin-bottom: 10px;
     font-family: ui-monospace, Consolas, monospace;
-    font-size: 0.72rem; font-weight: 700; letter-spacing: 2px;
-    color: var(--pa1, #38bdf8);
-}
 .flow-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .flow-tags li {
     font-size: 0.68rem; font-weight: 600; color: var(--text-muted);
@@ -715,15 +712,55 @@ footer {
     .flow-web .strand, .flow-web .dew { animation: none; }
 }
 
-/* Mobile: nodes stack, webs become vertical strands */
-@media (max-width: 900px) {
-    .project-flow { grid-template-columns: 1fr; gap: 6px; justify-items: stretch; }
-    .flow-web { height: 70px; }
-    .flow-web svg { transform: rotate(90deg); }
-    .node-name::after, .node-desc::before, .node-desc::after, .node-actions::before {
-        top: auto; bottom: -5px; left: 50%; right: auto; transform: translateX(50%);
-    }
-}
 
 /* ═══ Restored project-cover animations ═══ */
 
+
+/* ═══ Restored project-cover animations ═══ */
+@keyframes scanLine {
+                    0% { top: 0%; opacity: 0.2; }
+                    50% { top: 100%; opacity: 0.9; }
+                    100% { top: 0%; opacity: 0.2; }
+                }
+                @keyframes pulseDot {
+                    0% { transform: scale(0.95); opacity: 0.8; }
+                    50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #ef4444; }
+                    100% { transform: scale(0.95); opacity: 0.8; }
+                }
+                .flow-line {
+                    width: 26px;
+                    height: 2px;
+                    background-image: repeating-linear-gradient(90deg, #38bdf8 0 6px, transparent 6px 12px);
+                    animation: flowDash 0.8s linear infinite;
+                }
+                @keyframes flowDash {
+                    from { background-position: 0 0; }
+                    to { background-position: 12px 0; }
+                }
+                .gender-chip {
+                    padding: 6px 14px;
+                    border: 1px solid currentColor;
+                    border-radius: 10px;
+                    animation: chipGlow 2.4s infinite;
+                }
+                @keyframes chipGlow {
+                    0%, 60%, 100% { transform: scale(1); opacity: 0.7; }
+                    30% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 14px -2px currentColor; }
+                }
+                @keyframes ringPulse {
+                    0%, 100% { stroke-dashoffset: 45; }
+                    50% { stroke-dashoffset: 78; }
+                }
+                .vital-fill {
+                    height: 100%;
+                    border-radius: 4px;
+                    transform-origin: left;
+                    transform: scaleX(0);
+                }
+                .vitals-live .vital-fill {
+                    animation: barGrow 1.4s cubic-bezier(.22, 1, .36, 1) both;
+                }
+                @keyframes barGrow {
+                    from { transform: scaleX(0); }
+                    to { transform: scaleX(1); }
+                }
