@@ -67,6 +67,8 @@
         </div>
     </section>
 
+    </section>
+
     <!-- About & Skills Section -->
     <section id="about" class="bento-section">
         <h2 class="section-title">About Me & Skills ⚡</h2>
@@ -164,390 +166,245 @@
     <!-- Projects Section -->
     <section id="projects" class="projects-section">
         <h2 class="section-title">Featured Projects 🚀</h2>
-        <div class="projects-grid">
-
-            <!-- Project ZDB: ZelligeDB (from-scratch SQL database engine) -->
-            <div class="project-card" style="--pa1: #fcd34d; --pa2: #e6a23c;">
-                <!-- Zellige-themed Animated Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #171309); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; gap: 26px; border: 1px solid rgba(230, 162, 60, 0.45); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(230, 162, 60, 0.1);">
-
-                    <!-- FROM SCRATCH badge -->
-                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
-                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
-                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">FROM SCRATCH · NO LIBS</span>
-                    </div>
-
-                    <!-- Mosaic tile cluster (zellige motif) -->
-                    <div style="display: grid; grid-template-columns: repeat(3, 16px); grid-auto-rows: 16px; gap: 4px; transform: rotate(-8deg);">
-                        <div style="background: #e6a23c; border-radius: 3px; opacity: .9;"></div>
-                        <div style="background: #2d333b; border-radius: 3px;"></div>
-                        <div style="background: #e6a23c66; border-radius: 3px;"></div>
-                        <div style="background: #2d333b; border-radius: 3px;"></div>
-                        <div style="background: #e6a23c; border-radius: 3px;"></div>
-                        <div style="background: #2d333b; border-radius: 3px;"></div>
-                        <div style="background: #e6a23c66; border-radius: 3px;"></div>
-                        <div style="background: #2d333b; border-radius: 3px;"></div>
-                        <div style="background: #e6a23c; border-radius: 3px;"></div>
-                    </div>
-
-                    <!-- Mini REPL result table -->
-                    <div style="font-family: monospace; font-size: 0.68rem; line-height: 1.45; color: #fcd34d; white-space: pre;">┌────┬───────┐
-│ id │ score │
-├────┼───────┤
-│ 1  │ 90    │
-│ 3  │ 88    │
-└────┴───────┘</div>
-
-                    <!-- Floating badges -->
-                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(230, 162, 60, 0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(230, 162, 60, 0.35); font-size: 0.7rem; color: #fcd34d;">
-                        0 unsafe · 65 tests
-                    </div>
+                <div class="project-flow" style="--pa1: #fcd34d; --pa2: #e6a23c;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">01</span>
+                <h3>ZelligeDB</h3>
+                <p class="flow-sub">a SQL database engine from scratch</p>
+                <ul class="flow-tags"><li>Rust</li><li>B+Tree</li><li>WAL</li><li>MVCC</li><li>WebAssembly</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
                 </div>
-
-                <div class="project-tags">
-                    <span>Rust</span>
-                    <span>B+Tree</span>
-                    <span>WAL</span>
-                    <span>MVCC</span>
-                    <span>WebAssembly</span>
-                </div>
-
-                <h3>ZelligeDB — a SQL database engine from scratch</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
+            <div class="flow-node node-desc reveal">
                 <p>A full relational database engine built from first principles in Rust: 4&nbsp;KiB checksummed pages, a B+Tree, a crash-proof write-ahead log (survives 200 randomized kill-points), MVCC snapshot isolation, a hand-written SQL front-end differential-tested against SQLite, and a Postgres-compatible server real <span style="font-family: monospace;">psql</span> clients connect to. Compiles to WebAssembly — try it live in the browser.</p>
-                <div class="project-links"><a href="https://hajar-benhadj.github.io/zellige-db/" target="_blank" class="p-btn" style="--pa1: #fcd34d; --pa2: #e6a23c;">Live Playground ▶ <span class="arr">→</span></a>
-                    <a href="https://github.com/hajar-benhadj/zellige-db" target="_blank" class="p-btn ghost" style="--pa1: #fcd34d; --pa2: #e6a23c;">View Repo 🚀</a></div>
-                </div>
             </div>
-
-            <!-- Project RD: RepoDoctor (GitHub Repository Health Analyzer) -->
-            <div class="project-card" style="--pa1: #34d399; --pa2: #059669;">
-                <!-- Medical analysis themed Animated Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #0c1712); height: 150px; border-radius: 10px; margin-bottom: 14px; border: 1px solid rgba(52, 211, 153, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(52, 211, 153, 0.1); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 10px;">
-
-                    <!-- Badge row (in-flow: no overlap at any width) -->
-                    <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; justify-content: center;">
-                        <div style="display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 2px 9px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
-                            <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
-                            <span style="font-size: 0.65rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">ZERO-DEP ENGINE</span>
-                        </div>
-                        <div style="background: rgba(52, 211, 153, 0.15); padding: 2px 9px; border-radius: 4px; border: 1px solid rgba(52, 211, 153, 0.35); font-size: 0.65rem; font-weight: 700; color: #6ee7b7; font-family: monospace;">
-                            🩺 A · 89%
-                        </div>
-                    </div>
-
-                    <!-- 5 animated vitals bars (real output from commander.js diagnosis) -->
-                    <div id="rd-vitals" style="display: flex; flex-direction: column; gap: 5px; width: 100%; max-width: 300px; font-family: monospace; font-size: 0.68rem; font-weight: 700; color: #94a3b8;">
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="width: 62px; text-align: right;">quality</span>
-                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
-                                <div class="vital-fill" style="width: 76%; background: linear-gradient(90deg, #0284c7, #38bdf8); animation-delay: 0.1s;"></div>
-                            </div>
-                            <span style="width: 30px; color: #7dd3fc;">76%</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="width: 62px; text-align: right;">security</span>
-                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
-                                <div class="vital-fill" style="width: 90%; background: linear-gradient(90deg, #e11d48, #fb7185); animation-delay: 0.25s;"></div>
-                            </div>
-                            <span style="width: 30px; color: #fda4af;">90%</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="width: 62px; text-align: right;">testing</span>
-                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
-                                <div class="vital-fill" style="width: 99%; background: linear-gradient(90deg, #059669, #34d399); animation-delay: 0.4s;"></div>
-                            </div>
-                            <span style="width: 30px; color: #6ee7b7;">99%</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="width: 62px; text-align: right;">docs</span>
-                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
-                                <div class="vital-fill" style="width: 90%; background: linear-gradient(90deg, #d97706, #fbbf24); animation-delay: 0.55s;"></div>
-                            </div>
-                            <span style="width: 30px; color: #fcd34d;">90%</span>
-                        </div>
-                        <div style="display: flex; align-items: center; gap: 8px;">
-                            <span style="width: 62px; text-align: right;">maintain.</span>
-                            <div style="flex: 1; height: 8px; background: rgba(148,163,184,.15); border-radius: 4px; overflow: hidden;">
-                                <div class="vital-fill" style="width: 96%; background: linear-gradient(90deg, #7c3aed, #a78bfa); animation-delay: 0.7s;"></div>
-                            </div>
-                            <span style="width: 30px; color: #c4b5fd;">96%</span>
-                        </div>
-                    </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
                 </div>
-
-                <div class="project-tags">
-                    <span>Next.js</span>
-                    <span>TypeScript</span>
-                    <span>Static Analysis</span>
-                    <span>OSV.dev</span>
-                </div>
-
-                <h3>RepoDoctor — GitHub Repository Health Analyzer</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>Paste any public GitHub repo and get a medical report for your codebase: explainable scores for quality, security, docs, testing &amp; maintainability, secret &amp; CVE detection (OSV.dev against your exact lockfile), an architecture graph with cycle detection, and a prioritized prescription — plus head-to-head repo duels with a shareable card.</p>
-                <div class="project-links"><a href="https://github.com/hajar-benhadj/repodoctor" target="_blank" class="p-btn" style="--pa1: #34d399; --pa2: #059669;">View Repo 🚀 <span class="arr">→</span></a></div>
-                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://hajar-benhadj.github.io/zellige-db/" target="_blank" class="p-btn" style="--pa1: #fcd34d; --pa2: #e6a23c;">Live Playground ▶ <span class="arr">→</span> <span class="arr">→</span></a><a href="https://github.com/hajar-benhadj/zellige-db" target="_blank" class="p-btn ghost" style="--pa1: #fcd34d; --pa2: #e6a23c;">View Repo 🚀 <span class="arr">→</span></a>
             </div>
-
-            <!-- Project 0: Business Autopilot Kit (n8n Automation Pack) -->
-            <div class="project-card" style="--pa1: #38bdf8; --pa2: #0072ff;">
-                <!-- Animated Workflow Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0, 198, 255, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.1);">
-
-                    <!-- Live Automation Badge -->
-                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
-                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
-                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">AUTOPILOT ON</span>
-                    </div>
-
-                    <!-- Workflow pipeline: Sheet -> n8n -> Gmail -->
-                    <div style="display: flex; align-items: center; gap: 8px; margin-top: 10px; font-family: monospace; font-size: 0.72rem; font-weight: 700;">
-                        <div style="background: rgba(16, 185, 129, 0.12); border: 1px solid #10b981; color: #6ee7b7; padding: 6px 10px; border-radius: 8px;">📋 Sheet</div>
-                        <div class="flow-line"></div>
-                        <div style="background: rgba(245, 158, 11, 0.12); border: 1px solid #f59e0b; color: #fcd34d; padding: 6px 10px; border-radius: 8px;">⚙️ n8n</div>
-                        <div class="flow-line"></div>
-                        <div style="background: rgba(239, 68, 68, 0.12); border: 1px solid #ef4444; color: #fca5a5; padding: 6px 10px; border-radius: 8px;">✉️ Gmail</div>
-                    </div>
-
-                    <!-- Floating Pack Badge -->
-                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(0, 198, 255, 0.15); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 198, 255, 0.3); font-size: 0.7rem; color: #7dd3fc;">
-                        6× workflows
-                    </div>
-                </div>
-
-                <div class="project-tags">
-                    <span>n8n</span>
-                    <span>Automation</span>
-                    <span>OpenAI API</span>
-                </div>
-
-                <h3>Business Autopilot Kit — n8n Automation Pack</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>A digital product: 6 production-ready n8n automations that send invoices, chase late payments on autopilot, and brief your inbox with AI. Free edition open-sourced on GitHub — full kit with setup guide sold on Gumroad.</p>
-                <div class="project-links"><a href="https://github.com/hajar-benhadj/business-autopilot-kit" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0072ff;">View Repo 🚀 <span class="arr">→</span></a></div>
-                </div>
-            </div>
-
-            <!-- Project CVL: CV Lens (ATS CV Checker) -->
-            <div class="project-card" style="--pa1: #38bdf8; --pa2: #0284c7;">
-                <!-- ATS-themed Animated Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(56, 189, 248, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.1);">
-
-                    <!-- Score ring -->
-                    <div style="position: relative; width: 92px; height: 92px; margin-top: 4px;">
-                        <svg width="92" height="92" viewBox="0 0 92 92" style="transform: rotate(-90deg);">
-                            <circle cx="46" cy="46" r="38" fill="none" stroke="rgba(148,163,184,.18)" stroke-width="8"></circle>
-                            <circle cx="46" cy="46" r="38" fill="none" stroke="#34d399" stroke-width="8" stroke-linecap="round" stroke-dasharray="238.76" stroke-dashoffset="45" style="animation: ringPulse 2.6s ease-in-out infinite;"></circle>
-                        </svg>
-                        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 800; font-size: 1.15rem;">82<small style="font-size: 0.55rem; color: #94a3b8; font-weight: 600;">MATCH</small></div>
-                    </div>
-
-                    <!-- Keyword chips -->
-                    <div style="display: flex; flex-direction: column; gap: 6px; font-family: monospace; font-size: 0.7rem; font-weight: 700; margin-left: 18px;">
-                        <div><span style="color: #6ee7b7;">✔ React</span> <span style="color: #6ee7b7;">✔ SQL</span></div>
-                        <div><span style="color: #fcd34d;">~ TypeScript</span></div>
-                        <div><span style="color: #fca5a5;">✖ Docker</span></div>
-                    </div>
-
-                    <!-- LIVE badge -->
-                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
-                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
-                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">ZERO SETUP</span>
-                    </div>
-
-                    <!-- Floating badge -->
-                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(56, 198, 255, 0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(56, 198, 255, 0.3); font-size: 0.7rem; color: #7dd3fc;">
-                        EN · FR
-                    </div>
-                </div>
-
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>AI</span>
-                    <span>Vercel</span>
-                </div>
-
-                <h3>CV Lens — ATS CV Checker</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>Paste a CV and a job posting: get an evidence-based keyword match table (found / partial / missing), a match score, and exactly what to add, improve, or remove — with server-side AI, rate-limited and key-safe.</p>
-                <div class="project-links"><a href="https://hajar-benhadj.github.io/ats-cv-checker/" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0284c7;">Live Demo <span class="arr">→</span></a>
-                    <a href="https://github.com/hajar-benhadj/ats-cv-checker" target="_blank" class="p-btn ghost" style="--pa1: #38bdf8; --pa2: #0284c7;">View Repo 🚀</a></div>
-                </div>
-            </div>
-
-            <!-- Project DF: DeutschFlow (German Learning PWA) -->
-            <div class="project-card" style="--pa1: #fde047; --pa2: #eab308;">
-                <!-- German-themed Animated Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 206, 0, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(255, 206, 0, 0.08);">
-
-                    <!-- German Flag Stripe -->
-                    <div style="position: absolute; top: 0; left: 0; right: 0; height: 6px; background: linear-gradient(180deg, #1a1a1a 33.3%, #DD0000 33.3% 66.6%, #FFCE00 66.6%);"></div>
-
-                    <!-- PWA Offline Badge -->
-                    <div style="position: absolute; top: 12px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
-                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
-                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">PWA · OFFLINE</span>
-                    </div>
-
-                    <!-- Der / Die / Das chips, lighting up in turn -->
-                    <div style="display: flex; gap: 10px; margin-top: 6px; font-family: monospace; font-size: 0.85rem; font-weight: 700;">
-                        <div class="gender-chip" style="color: #7dd3fc; animation-delay: 0s;">der</div>
-                        <div class="gender-chip" style="color: #fca5a5; animation-delay: 0.8s;">die</div>
-                        <div class="gender-chip" style="color: #fde047; animation-delay: 1.6s;">das</div>
-                    </div>
-
-                    <!-- Floating Tech Badge -->
-                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(255, 206, 0, 0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(255, 206, 0, 0.35); font-size: 0.7rem; color: #fde047;">
-                        Zero frameworks
-                    </div>
-                </div>
-
-                <div class="project-tags">
-                    <span>JavaScript</span>
-                    <span>PWA</span>
-                    <span>AI Chat</span>
-                </div>
-
-                <h3>DeutschFlow — German Learning PWA</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>An Arabic-first, installable PWA for learning German: interactive stories, Krimi chapters, dialogues, exams, vocabulary games, and an AI chat tutor — vanilla JavaScript, works offline.</p>
-                <div class="project-links"><a href="https://deutschflow-hajar.netlify.app/" target="_blank" class="p-btn" style="--pa1: #fde047; --pa2: #eab308;">Live Demo <span class="arr">→</span></a></div>
-                </div>
-            </div>
-
-        <!-- Project 3: AI API Test Generator (Code Generation Vibe) -->
-            <div class="project-card" style="--pa1: #22d3ee; --pa2: #0e7490;">
-                <!-- Artistic & Animated Code Generation Header -->
-                <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; flex-direction: column; justify-content: center; padding: 15px; border: 1px solid rgba(0, 198, 255, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.1); font-family: monospace;">
-                    
-                    <!-- Simulated Code Window Header Dots -->
-                    <div style="display: flex; gap: 6px; position: absolute; top: 10px; left: 12px;">
-                        <span style="width: 8px; height: 8px; background: #ef4444; border-radius: 50%;"></span>
-                        <span style="width: 8px; height: 8px; background: #f59e0b; border-radius: 50%;"></span>
-                        <span style="width: 8px; height: 8px; background: #10b981; border-radius: 50%;"></span>
-                    </div>
-
-                    <!-- Simulated Terminal Code Lines Animation -->
-                    <div style="margin-top: 15px; font-size: 0.8rem; color: #38bdf8; opacity: 0.9; line-height: 1.5;">
-                        <span style="color: #94a3b8;">></span> parsing_openapi_docs()<br>
-                        <span style="color: #94a3b8;">></span> ai_generating_pytest()...<br>
-                        <span style="color: #34d399; font-weight: bold;">✔ 100% Test Coverage Ready! 🚀</span>
-                    </div>
-
-                    <!-- Floating Tech Badge -->
-                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(0, 198, 255, 0.15); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(0, 198, 255, 0.3); font-size: 0.7rem; color: #7dd3fc;">
-                        Swagger ➔ Pytest
-                    </div>
-                </div>
-                
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>Pytest</span>
-                    <span>OpenAI API</span>
-                    <span>Swagger/OpenAPI</span>
-                </div>
-                
-                <h3>AI API Test Generator</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>An automated Python-based tool that parses Swagger/OpenAPI documentation and leverages AI to generate robust Pytest test cases to streamline backend testing.</p>
-                <div class="project-links"><a href="https://github.com/hajar-benhadj/AI-API-TEST-GENERATOR" target="_blank" class="p-btn" style="--pa1: #22d3ee; --pa2: #0e7490;">View Repo 🚀 <span class="arr">→</span></a></div>
-                </div>
-            </div>
-          <!-- Project 4: Real-Time Fall Detection System (Fixed & Aligned Edition) -->
-            <div class="project-card" style="--pa1: #f87171; --pa2: #dc2626;">
-                <!-- Artistic & Animated Vision Header -->
-                <div style="background: radial-gradient(circle at center, #1e1b4b 0%, #090d16 100%); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(239, 68, 68, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(239, 68, 68, 0.15); padding: 10px;">
-                    
-                    <!-- Animated Scanning Radar Line Effect -->
-                    <div style="position: absolute; width: 100%; height: 2px; background: linear-gradient(90deg, transparent, #ef4444, transparent); animation: scanLine 2.5s infinite ease-in-out;"></div>
-                    
-                    <!-- Pulsing Live Camera Icon / Badge -->
-                    <div style="display: flex; align-items: center; gap: 6px; background: rgba(239, 68, 68, 0.15); padding: 4px 10px; border-radius: 20px; border: 1px solid rgba(239, 68, 68, 0.5); margin-bottom: 6px;">
-                        <span style="width: 6px; height: 6px; background-color: #ef4444; border-radius: 50%; box-shadow: 0 0 8px #ef4444; animation: pulseDot 1.5s infinite;"></span>
-                        <span style="font-size: 0.75rem; font-weight: 700; color: #fca5a5; letter-spacing: 0.5px;">LIVE AI VISION</span>
-                    </div>
-                    
-                    <!-- Fixed Title with Balanced Font Size -->
-                    <span style="font-size: 1rem; font-weight: 800; color: #ffffff; text-align: center; text-shadow: 0 0 10px rgba(239, 68, 68, 0.6); line-height: 1.3;">📷 Smart Pose & Fall Tracker</span>
-                </div>
-                
-                <div class="project-tags">
-                    <span>Python</span>
-                    <span>OpenCV</span>
-                    <span>MediaPipe</span>
-                    <span>Telegram API</span>
-                </div>
-                
-                <h3>Real-Time Fall Detection System</h3>
-                <span class="card-hint">Hover for details <span class="arr">→</span></span>
-                <div class="card-reveal">
-                <p>An intelligent computer vision system that tracks skeletal keypoints using MediaPipe to detect human falls in real-time and instantly sends emergency photo alerts via Telegram.</p>
-                <div class="project-links"><a href="https://github.com/hajar-benhadj/Fall_Detection_System/" target="_blank" class="p-btn" style="--pa1: #f87171; --pa2: #dc2626;">View Repo 🚀 <span class="arr">→</span></a></div>
-                </div>
-            </div>
-
-            <!-- CSS Animations -->
-            <style>
-                @keyframes scanLine {
-                    0% { top: 0%; opacity: 0.2; }
-                    50% { top: 100%; opacity: 0.9; }
-                    100% { top: 0%; opacity: 0.2; }
-                }
-                @keyframes pulseDot {
-                    0% { transform: scale(0.95); opacity: 0.8; }
-                    50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #ef4444; }
-                    100% { transform: scale(0.95); opacity: 0.8; }
-                }
-                .flow-line {
-                    width: 26px;
-                    height: 2px;
-                    background-image: repeating-linear-gradient(90deg, #38bdf8 0 6px, transparent 6px 12px);
-                    animation: flowDash 0.8s linear infinite;
-                }
-                @keyframes flowDash {
-                    from { background-position: 0 0; }
-                    to { background-position: 12px 0; }
-                }
-                .gender-chip {
-                    padding: 6px 14px;
-                    border: 1px solid currentColor;
-                    border-radius: 10px;
-                    animation: chipGlow 2.4s infinite;
-                }
-                @keyframes chipGlow {
-                    0%, 60%, 100% { transform: scale(1); opacity: 0.7; }
-                    30% { transform: scale(1.15); opacity: 1; box-shadow: 0 0 14px -2px currentColor; }
-                }
-                @keyframes ringPulse {
-                    0%, 100% { stroke-dashoffset: 45; }
-                    50% { stroke-dashoffset: 78; }
-                }
-                .vital-fill {
-                    height: 100%;
-                    border-radius: 4px;
-                    transform-origin: left;
-                    transform: scaleX(0);
-                }
-                .vitals-live .vital-fill {
-                    animation: barGrow 1.4s cubic-bezier(.22, 1, .36, 1) both;
-                }
-                @keyframes barGrow {
-                    from { transform: scaleX(0); }
-                    to { transform: scaleX(1); }
-                }
-            </style>
-            
         </div>
-    </section>
-
-    <!-- Footer -->
+        <div class="project-flow" style="--pa1: #34d399; --pa2: #059669;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">02</span>
+                <h3>RepoDoctor</h3>
+                <p class="flow-sub">GitHub Repository Health Analyzer</p>
+                <ul class="flow-tags"><li>Next.js</li><li>TypeScript</li><li>Static Analysis</li><li>OSV.dev</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>Paste any public GitHub repo and get a medical report for your codebase: explainable scores for quality, security, docs, testing &amp; maintainability, secret &amp; CVE detection (OSV.dev against your exact lockfile), an architecture graph with cycle detection, and a prioritized prescription — plus head-to-head repo duels with a shareable card.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://github.com/hajar-benhadj/repodoctor" target="_blank" class="p-btn" style="--pa1: #34d399; --pa2: #059669;">View Repo 🚀 <span class="arr">→</span> <span class="arr">→</span></a>
+            </div>
+        </div>
+        <div class="project-flow" style="--pa1: #38bdf8; --pa2: #0072ff;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">03</span>
+                <h3>Business Autopilot Kit</h3>
+                <p class="flow-sub">n8n Automation Pack</p>
+                <ul class="flow-tags"><li>n8n</li><li>Automation</li><li>OpenAI API</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>A digital product: 6 production-ready n8n automations that send invoices, chase late payments on autopilot, and brief your inbox with AI. Free edition open-sourced on GitHub — full kit with setup guide sold on Gumroad.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://github.com/hajar-benhadj/business-autopilot-kit" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0072ff;">View Repo 🚀 <span class="arr">→</span> <span class="arr">→</span></a>
+            </div>
+        </div>
+        <div class="project-flow" style="--pa1: #38bdf8; --pa2: #0284c7;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">04</span>
+                <h3>CV Lens</h3>
+                <p class="flow-sub">ATS CV Checker</p>
+                <ul class="flow-tags"><li>JavaScript</li><li>AI</li><li>Vercel</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>Paste a CV and a job posting: get an evidence-based keyword match table (found / partial / missing), a match score, and exactly what to add, improve, or remove — with server-side AI, rate-limited and key-safe.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://hajar-benhadj.github.io/ats-cv-checker/" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0284c7;">Live Demo <span class="arr">→</span> <span class="arr">→</span></a><a href="https://github.com/hajar-benhadj/ats-cv-checker" target="_blank" class="p-btn ghost" style="--pa1: #38bdf8; --pa2: #0284c7;">View Repo 🚀 <span class="arr">→</span></a>
+            </div>
+        </div>
+        <div class="project-flow" style="--pa1: #fde047; --pa2: #eab308;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">05</span>
+                <h3>DeutschFlow</h3>
+                <p class="flow-sub">German Learning PWA</p>
+                <ul class="flow-tags"><li>JavaScript</li><li>PWA</li><li>AI Chat</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>An Arabic-first, installable PWA for learning German: interactive stories, Krimi chapters, dialogues, exams, vocabulary games, and an AI chat tutor — vanilla JavaScript, works offline.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://deutschflow-hajar.netlify.app/" target="_blank" class="p-btn" style="--pa1: #fde047; --pa2: #eab308;">Live Demo <span class="arr">→</span> <span class="arr">→</span></a>
+            </div>
+        </div>
+        <div class="project-flow" style="--pa1: #22d3ee; --pa2: #0e7490;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">06</span>
+                <h3>AI API Test Generator</h3>
+                
+                <ul class="flow-tags"><li>Python</li><li>Pytest</li><li>OpenAI API</li><li>Swagger/OpenAPI</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>An automated Python-based tool that parses Swagger/OpenAPI documentation and leverages AI to generate robust Pytest test cases to streamline backend testing.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://github.com/hajar-benhadj/AI-API-TEST-GENERATOR" target="_blank" class="p-btn" style="--pa1: #22d3ee; --pa2: #0e7490;">View Repo 🚀 <span class="arr">→</span> <span class="arr">→</span></a>
+            </div>
+        </div>
+        <div class="project-flow" style="--pa1: #f87171; --pa2: #dc2626;">
+            <div class="flow-node node-name reveal">
+                <span class="flow-index">07</span>
+                <h3>Real-Time Fall Detection System</h3>
+                
+                <ul class="flow-tags"><li>Python</li><li>OpenCV</li><li>MediaPipe</li><li>Telegram API</li></ul>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-desc reveal">
+                <p>An intelligent computer vision system that tracks skeletal keypoints using MediaPipe to detect human falls in real-time and instantly sends emergency photo alerts via Telegram.</p>
+            </div>
+            <div class="flow-web" aria-hidden="true">
+                    <svg viewBox="0 0 110 150" preserveAspectRatio="xMidYMid meet">
+                        <path class="strand" d="M0 75 C 40 75, 70 75, 110 75"/>
+                        <path class="strand slow" d="M0 75 C 38 42, 72 38, 110 58"/>
+                        <path class="strand slow" d="M0 75 C 38 108, 72 112, 110 92"/>
+                        <circle class="node-dot" cx="55" cy="74" r="3.2"/>
+                        <circle class="dew d1" cx="30" cy="56" r="2.2"/>
+                        <circle class="dew d2" cx="82" cy="94" r="2.2"/>
+                    </svg>
+                </div>
+            <div class="flow-node node-actions reveal">
+                <a href="https://github.com/hajar-benhadj/Fall_Detection_System/" target="_blank" class="p-btn" style="--pa1: #f87171; --pa2: #dc2626;">View Repo 🚀 <span class="arr">→</span> <span class="arr">→</span></a>
+            </div>
+        </div>
+<!-- Footer -->
     <footer id="contact">
         <h2>Let's Connect! 🤝</h2>
         <p>Feel free to reach out for projects, collaborations, or inquiries.</p>
