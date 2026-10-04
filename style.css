@@ -670,9 +670,6 @@ footer {
 
 .node-name h3 { font-size: 1.25rem; line-height: 1.3; color: var(--text-main); }
 .flow-sub { color: var(--pa1, #38bdf8); font-size: 0.88rem; font-weight: 600; margin-top: 4px; }
-.flow-index {
-    display: inline-block; margin-bottom: 10px;
-    font-family: ui-monospace, Consolas, monospace;
 .flow-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 6px; margin-top: 14px; }
 .flow-tags li {
     font-size: 0.68rem; font-weight: 600; color: var(--text-muted);
