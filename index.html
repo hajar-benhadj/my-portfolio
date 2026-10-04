@@ -94,7 +94,7 @@
                     </button>
                 </div>
                 <div class="card-content-expanded">
-                    <p>Software developer with a builder mindset — I ship complete products, not just code: a paid <strong>n8n automation pack</strong> for small businesses, <strong>CV Lens</strong> — an ATS CV checker with server-side AI that job seekers use for free, an offline-capable <strong>German-learning PWA</strong> with an AI tutor, and <strong>RepoDoctor</strong> — a full-stack GitHub repository analyzer driven by a zero-dependency static-analysis engine: complexity, secret &amp; CVE detection, architecture graphs.</p>
+                    <p>Software developer with a builder mindset — I ship complete products, not just code: a paid <strong>n8n automation pack</strong> for small businesses, <strong>CV Lens</strong> — an ATS CV checker with server-side AI that job seekers use for free, an offline-capable <strong>German-learning PWA</strong> with an AI tutor, <strong>RepoDoctor</strong> — a full-stack GitHub repository analyzer driven by a zero-dependency static-analysis engine: complexity, secret &amp; CVE detection, architecture graphs — and <strong>ZelligeDB</strong>, a from-scratch SQL database engine in Rust (pages, B+Tree, WAL, MVCC) that passes SQLite differential tests.</p>
                     <p style="margin-top: 10px;">Behind the scenes: clean code, tested APIs, privacy-first architecture, and automations that quietly do the routine work.</p>
                     <p style="margin-top: 12px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 10px;"><strong>Focus:</strong> AI-powered web apps &middot; Developer &amp; security tooling &middot; Automation</p>
                     <p style="margin-top: 6px;"><strong>Currently:</strong> shipping full-stack (Next.js + TypeScript) — open to freelance automation, AI tooling and web work</p>
@@ -133,6 +133,10 @@
                         <span>Pytest · API Testing · Swagger / OpenAPI</span>
                     </div>
                     <div class="skill-cat">
+                        <h4><i data-lucide="database"></i> Systems &amp; Storage</h4>
+                        <span>Rust · B+Tree &amp; WAL internals · MVCC · Postgres wire protocol · WebAssembly</span>
+                    </div>
+                    <div class="skill-cat">
                         <h4><i data-lucide="shield-check"></i> Static Analysis &amp; Security</h4>
                         <span>Custom code parsers · Secret detection · OSV.dev / CVE scanning · Dependency auditing</span>
                     </div>
@@ -161,6 +165,61 @@
     <section id="projects" class="projects-section">
         <h2 class="section-title">Featured Projects 🚀</h2>
         <div class="projects-grid">
+
+            <!-- Project ZDB: ZelligeDB (from-scratch SQL database engine) -->
+            <div class="project-card">
+                <!-- Zellige-themed Animated Header -->
+                <div style="background: linear-gradient(135deg, #090d16, #171309); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; gap: 26px; border: 1px solid rgba(230, 162, 60, 0.45); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(230, 162, 60, 0.1);">
+
+                    <!-- FROM SCRATCH badge -->
+                    <div style="position: absolute; top: 10px; left: 12px; display: flex; align-items: center; gap: 6px; background: rgba(16, 185, 129, 0.15); padding: 3px 10px; border-radius: 20px; border: 1px solid rgba(16, 185, 129, 0.5);">
+                        <span style="width: 6px; height: 6px; background-color: #10b981; border-radius: 50%; box-shadow: 0 0 8px #10b981; animation: pulseDot 1.5s infinite;"></span>
+                        <span style="font-size: 0.7rem; font-weight: 700; color: #6ee7b7; letter-spacing: 0.5px;">FROM SCRATCH · NO LIBS</span>
+                    </div>
+
+                    <!-- Mosaic tile cluster (zellige motif) -->
+                    <div style="display: grid; grid-template-columns: repeat(3, 16px); grid-auto-rows: 16px; gap: 4px; transform: rotate(-8deg);">
+                        <div style="background: #e6a23c; border-radius: 3px; opacity: .9;"></div>
+                        <div style="background: #2d333b; border-radius: 3px;"></div>
+                        <div style="background: #e6a23c66; border-radius: 3px;"></div>
+                        <div style="background: #2d333b; border-radius: 3px;"></div>
+                        <div style="background: #e6a23c; border-radius: 3px;"></div>
+                        <div style="background: #2d333b; border-radius: 3px;"></div>
+                        <div style="background: #e6a23c66; border-radius: 3px;"></div>
+                        <div style="background: #2d333b; border-radius: 3px;"></div>
+                        <div style="background: #e6a23c; border-radius: 3px;"></div>
+                    </div>
+
+                    <!-- Mini REPL result table -->
+                    <div style="font-family: monospace; font-size: 0.68rem; line-height: 1.45; color: #fcd34d; white-space: pre;">┌────┬───────┐
+│ id │ score │
+├────┼───────┤
+│ 1  │ 90    │
+│ 3  │ 88    │
+└────┴───────┘</div>
+
+                    <!-- Floating badges -->
+                    <div style="position: absolute; bottom: 10px; right: 12px; background: rgba(230, 162, 60, 0.12); padding: 3px 8px; border-radius: 4px; border: 1px solid rgba(230, 162, 60, 0.35); font-size: 0.7rem; color: #fcd34d;">
+                        0 unsafe · 65 tests
+                    </div>
+                </div>
+
+                <div class="project-tags">
+                    <span>Rust</span>
+                    <span>B+Tree</span>
+                    <span>WAL</span>
+                    <span>MVCC</span>
+                    <span>WebAssembly</span>
+                </div>
+
+                <h3>ZelligeDB — a SQL database engine from scratch</h3>
+                <p>A full relational database engine built from first principles in Rust: 4&nbsp;KiB checksummed pages, a B+Tree, a crash-proof write-ahead log (survives 200 randomized kill-points), MVCC snapshot isolation, a hand-written SQL front-end differential-tested against SQLite, and a Postgres-compatible server real <span style="font-family: monospace;">psql</span> clients connect to. Compiles to WebAssembly — try it live in the browser.</p>
+
+                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
+                    <a href="https://hajar-benhadj.github.io/zellige-db/" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #e6a23c, #d97706); color: #0d1117; font-weight: 700; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">Live Playground ▶</a>
+                    <a href="https://github.com/hajar-benhadj/zellige-db" target="_blank" class="btn secondary" style="padding: 8px 15px; font-size: 14px; text-align: center;">View Repo 🚀</a>
+                </div>
+            </div>
 
             <!-- Project RD: RepoDoctor (GitHub Repository Health Analyzer) -->
             <div class="project-card">
