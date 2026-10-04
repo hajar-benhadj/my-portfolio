@@ -761,3 +761,55 @@ footer {
                     from { transform: scaleX(0); }
                     to { transform: scaleX(1); }
                 }
+
+/* ═══ Mobile: same story, vertical telling ═══
+   Nodes stack full-width; the spider webs become vertical strands
+   (dashed line + anchor dot) so the chain still reads top-to-bottom. */
+@media (max-width: 760px) {
+    .projects-flow { gap: 72px; }
+
+    .project-flow { grid-template-columns: 1fr; gap: 4px; }
+
+    /* anchor dots move from the side edges to the bottom center */
+    .node-name::after,
+    .node-desc::before,
+    .node-desc::after,
+    .node-actions::before {
+        top: auto; bottom: -5px;
+        left: 50%; right: auto;
+        transform: translateX(-50%);
+    }
+
+    /* vertical strand replaces the horizontal web */
+    .flow-web { height: auto; padding: 10px 0; }
+    .flow-web svg { display: none; }
+    .flow-web::before {
+        content: "";
+        display: block;
+        width: 2px; height: 58px;
+        margin: 0 auto;
+        background: repeating-linear-gradient(180deg,
+            var(--pa1, #38bdf8) 0 5px, transparent 5px 10px);
+        opacity: 0.55;
+        animation: webFlowV 1.6s linear infinite;
+    }
+    .flow-web::after {
+        content: "●";
+        display: block;
+        text-align: center;
+        color: var(--pa1, #38bdf8);
+        font-size: 9px;
+        line-height: 1;
+        margin-top: 4px;
+        filter: drop-shadow(0 0 5px var(--pa1, #38bdf8));
+    }
+
+    .node-actions { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+    .node-actions .p-btn { width: auto; flex: 1 1 auto; }
+}
+
+@keyframes webFlowV { to { background-position: 0 10px; } }
+
+@media (prefers-reduced-motion: reduce) {
+    .flow-web::before { animation: none; }
+}
