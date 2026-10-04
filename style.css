@@ -630,7 +630,7 @@ footer {
 }
 
 /* ═══ Project flows: name → spider-web → description → web → actions ═══ */
-.projects-flow { display: flex; flex-direction: column; gap: 130px; }
+.projects-flow { display: flex; flex-direction: column; gap: 180px; }
 
 .project-flow {
     display: grid;
@@ -766,7 +766,7 @@ footer {
    Nodes stack full-width; the spider webs become vertical strands
    (dashed line + anchor dot) so the chain still reads top-to-bottom. */
 @media (max-width: 760px) {
-    .projects-flow { gap: 72px; }
+    .projects-flow { gap: 110px; }
 
     .project-flow { grid-template-columns: 1fr; gap: 4px; }
 
