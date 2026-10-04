@@ -505,3 +505,126 @@ footer {
 .banner-body .indent {
     padding-left: 20px;
 }
+
+
+/* ═══ Modern project cards: uniform height + hover reveal ═══ */
+.projects-grid {
+    grid-auto-rows: 1fr;   /* every row — and therefore every card — equal height */
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 560px;
+    border-color: color-mix(in srgb, var(--pa, #38bdf8) 40%, transparent);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--pa, var(--accent));
+    box-shadow: 0 18px 44px rgba(0, 0, 0, 0.55), 0 0 26px -8px var(--pa, var(--accent));
+}
+
+.project-card .project-tags { margin-bottom: 10px; }
+
+.project-card h3 {
+    font-size: 1.02rem;
+    line-height: 1.45;
+    margin-bottom: 4px;
+}
+
+.card-hint {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 2px 0 10px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+.card-hint .arr { transition: transform 0.3s ease; }
+
+/* The reveal: description + buttons. Space is always reserved so cards
+   stay uniform; content fades and slides in on hover. */
+.card-reveal {
+    margin-top: auto;
+    padding-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 0.38s ease, transform 0.38s ease;
+}
+.project-card:hover .card-reveal,
+.project-card:focus-within .card-reveal {
+    opacity: 1;
+    transform: none;
+}
+.project-card:hover .card-hint {
+    opacity: 0;
+    margin-bottom: 0;
+    height: 0;
+    overflow: hidden;
+}
+.project-card:hover .card-hint .arr { transform: rotate(90deg); }
+
+.card-reveal p {
+    color: var(--text-muted);
+    font-size: 0.86rem;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.project-links { margin-top: 0; display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* Modern buttons: gradient from the card's own accent, glow + arrow slide */
+.p-btn {
+    --pa1: #38bdf8;
+    --pa2: #0284c7;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    padding: 10px 18px;
+    border-radius: 12px;
+    font-size: 0.86rem;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    background: linear-gradient(135deg, var(--pa1), var(--pa2));
+    box-shadow: 0 4px 16px -4px var(--pa1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease;
+}
+.p-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 24px -6px var(--pa1);
+    filter: saturate(1.15);
+    text-decoration: none;
+}
+.p-btn .arr { transition: transform 0.2s ease; display: inline-block; }
+.p-btn:hover .arr { transform: translateX(4px); }
+
+.p-btn.ghost {
+    background: transparent;
+    color: var(--text-main);
+    border: 1px solid var(--border);
+    box-shadow: none;
+}
+.p-btn.ghost:hover {
+    border-color: var(--pa1);
+    color: var(--pa1);
+    box-shadow: none;
+}
+
+/* Touch screens / small viewports: always show the full content */
+@media (hover: none), (max-width: 768px) {
+    .card-reveal { opacity: 1; transform: none; }
+    .card-hint { display: none; }
+    .project-card { min-height: 0; }
+}

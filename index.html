@@ -85,7 +85,9 @@
                     <h3>Who I Am</h3>
                 </div>
                 <div class="card-content-collapsed">
-                    <p>Software developer — I build products people actually use</p>
+                    <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                Software developer — I build products people actually use</p>
                     <button class="read-more-btn">
                         <span>Read More</span>
                         <svg class="expand-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -167,7 +169,7 @@
         <div class="projects-grid">
 
             <!-- Project ZDB: ZelligeDB (from-scratch SQL database engine) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #fcd34d; --pa2: #e6a23c;">
                 <!-- Zellige-themed Animated Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #171309); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; gap: 26px; border: 1px solid rgba(230, 162, 60, 0.45); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(230, 162, 60, 0.1);">
 
@@ -213,16 +215,14 @@
                 </div>
 
                 <h3>ZelligeDB — a SQL database engine from scratch</h3>
-                <p>A full relational database engine built from first principles in Rust: 4&nbsp;KiB checksummed pages, a B+Tree, a crash-proof write-ahead log (survives 200 randomized kill-points), MVCC snapshot isolation, a hand-written SQL front-end differential-tested against SQLite, and a Postgres-compatible server real <span style="font-family: monospace;">psql</span> clients connect to. Compiles to WebAssembly — try it live in the browser.</p>
-
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://hajar-benhadj.github.io/zellige-db/" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #e6a23c, #d97706); color: #0d1117; font-weight: 700; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">Live Playground ▶</a>
-                    <a href="https://github.com/hajar-benhadj/zellige-db" target="_blank" class="btn secondary" style="padding: 8px 15px; font-size: 14px; text-align: center;">View Repo 🚀</a>
+                <p>A full relational database engine built from first principles in Rust: 4&nbsp;KiB checksummed pages, a B+Tree, a crash-proof write-ahead log (survives 200 randomized kill-points), MVCC snapshot isolation, a hand-written SQL front-end differential-tested against SQLite, and a Postgres-compatible server real <span style="font-family: monospace;">psql</span> clients connect to. Compiles to WebAssembly — try it live in the browser.
+                <div class="project-links"><a href="https://hajar-benhadj.github.io/zellige-db/" target="_blank" class="p-btn" style="--pa1: #fcd34d; --pa2: #e6a23c;">Live Playground ▶ <span class="arr">→</span></a>
+                    <a href="https://github.com/hajar-benhadj/zellige-db" target="_blank" class="p-btn ghost" style="--pa1: #fcd34d; --pa2: #e6a23c;">View Repo 🚀</a></div>
                 </div>
             </div>
 
             <!-- Project RD: RepoDoctor (GitHub Repository Health Analyzer) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #34d399; --pa2: #059669;">
                 <!-- Medical analysis themed Animated Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #0c1712); height: 150px; border-radius: 10px; margin-bottom: 14px; border: 1px solid rgba(52, 211, 153, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(52, 211, 153, 0.1); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 9px; padding: 10px;">
 
@@ -285,15 +285,15 @@
                 </div>
 
                 <h3>RepoDoctor — GitHub Repository Health Analyzer</h3>
-                <p>Paste any public GitHub repo and get a medical report for your codebase: explainable scores for quality, security, docs, testing &amp; maintainability, secret &amp; CVE detection (OSV.dev against your exact lockfile), an architecture graph with cycle detection, and a prioritized prescription — plus head-to-head repo duels with a shareable card.</p>
-
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://github.com/hajar-benhadj/repodoctor" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #10b981, #059669); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                Paste any public GitHub repo and get a medical report for your codebase: explainable scores for quality, security, docs, testing &amp; maintainability, secret &amp; CVE detection (OSV.dev against your exact lockfile), an architecture graph with cycle detection, and a prioritized prescription — plus head-to-head repo duels with a shareable card.
+                <div class="project-links"><a href="https://github.com/hajar-benhadj/repodoctor" target="_blank" class="p-btn" style="--pa1: #34d399; --pa2: #059669;">View Repo 🚀 <span class="arr">→</span></a></div>
                 </div>
             </div>
 
             <!-- Project 0: Business Autopilot Kit (n8n Automation Pack) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #38bdf8; --pa2: #0072ff;">
                 <!-- Animated Workflow Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(0, 198, 255, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.1);">
 
@@ -325,15 +325,15 @@
                 </div>
 
                 <h3>Business Autopilot Kit — n8n Automation Pack</h3>
-                <p>A digital product: 6 production-ready n8n automations that send invoices, chase late payments on autopilot, and brief your inbox with AI. Free edition open-sourced on GitHub — full kit with setup guide sold on Gumroad.</p>
-
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://github.com/hajar-benhadj/business-autopilot-kit" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                A digital product: 6 production-ready n8n automations that send invoices, chase late payments on autopilot, and brief your inbox with AI. Free edition open-sourced on GitHub — full kit with setup guide sold on Gumroad.
+                <div class="project-links"><a href="https://github.com/hajar-benhadj/business-autopilot-kit" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0072ff;">View Repo 🚀 <span class="arr">→</span></a></div>
                 </div>
             </div>
 
             <!-- Project CVL: CV Lens (ATS CV Checker) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #38bdf8; --pa2: #0284c7;">
                 <!-- ATS-themed Animated Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(56, 189, 248, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(56, 189, 248, 0.1);">
 
@@ -372,16 +372,16 @@
                 </div>
 
                 <h3>CV Lens — ATS CV Checker</h3>
-                <p>Paste a CV and a job posting: get an evidence-based keyword match table (found / partial / missing), a match score, and exactly what to add, improve, or remove — with server-side AI, rate-limited and key-safe.</p>
-
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://hajar-benhadj.github.io/ats-cv-checker/" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; text-align: center;">Live Demo</a>
-                    <a href="https://github.com/hajar-benhadj/ats-cv-checker" target="_blank" class="btn secondary" style="padding: 8px 15px; font-size: 14px; text-align: center;">View Repo 🚀</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                Paste a CV and a job posting: get an evidence-based keyword match table (found / partial / missing), a match score, and exactly what to add, improve, or remove — with server-side AI, rate-limited and key-safe.
+                <div class="project-links"><a href="https://hajar-benhadj.github.io/ats-cv-checker/" target="_blank" class="p-btn" style="--pa1: #38bdf8; --pa2: #0284c7;">Live Demo <span class="arr">→</span></a>
+                    <a href="https://github.com/hajar-benhadj/ats-cv-checker" target="_blank" class="p-btn ghost" style="--pa1: #38bdf8; --pa2: #0284c7;">View Repo 🚀</a></div>
                 </div>
             </div>
 
             <!-- Project DF: DeutschFlow (German Learning PWA) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #fde047; --pa2: #eab308;">
                 <!-- German-themed Animated Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255, 206, 0, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(255, 206, 0, 0.08);">
 
@@ -414,15 +414,15 @@
                 </div>
 
                 <h3>DeutschFlow — German Learning PWA</h3>
-                <p>An Arabic-first, installable PWA for learning German: interactive stories, Krimi chapters, dialogues, exams, vocabulary games, and an AI chat tutor — vanilla JavaScript, works offline.</p>
-
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://deutschflow-hajar.netlify.app/" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; text-align: center;">Live Demo</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                An Arabic-first, installable PWA for learning German: interactive stories, Krimi chapters, dialogues, exams, vocabulary games, and an AI chat tutor — vanilla JavaScript, works offline.
+                <div class="project-links"><a href="https://deutschflow-hajar.netlify.app/" target="_blank" class="p-btn" style="--pa1: #fde047; --pa2: #eab308;">Live Demo <span class="arr">→</span></a></div>
                 </div>
             </div>
 
         <!-- Project 3: AI API Test Generator (Code Generation Vibe) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #22d3ee; --pa2: #0e7490;">
                 <!-- Artistic & Animated Code Generation Header -->
                 <div style="background: linear-gradient(135deg, #090d16, #131c31); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; flex-direction: column; justify-content: center; padding: 15px; border: 1px solid rgba(0, 198, 255, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(0, 198, 255, 0.1); font-family: monospace;">
                     
@@ -454,14 +454,14 @@
                 </div>
                 
                 <h3>AI API Test Generator</h3>
-                <p>An automated Python-based tool that parses Swagger/OpenAPI documentation and leverages AI to generate robust Pytest test cases to streamline backend testing.</p>
-                
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://github.com/hajar-benhadj/AI-API-TEST-GENERATOR" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #00c6ff, #0072ff); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                An automated Python-based tool that parses Swagger/OpenAPI documentation and leverages AI to generate robust Pytest test cases to streamline backend testing.
+                <div class="project-links"><a href="https://github.com/hajar-benhadj/AI-API-TEST-GENERATOR" target="_blank" class="p-btn" style="--pa1: #22d3ee; --pa2: #0e7490;">View Repo 🚀 <span class="arr">→</span></a></div>
                 </div>
             </div>
           <!-- Project 4: Real-Time Fall Detection System (Fixed & Aligned Edition) -->
-            <div class="project-card">
+            <div class="project-card" style="--pa1: #f87171; --pa2: #dc2626;">
                 <!-- Artistic & Animated Vision Header -->
                 <div style="background: radial-gradient(circle at center, #1e1b4b 0%, #090d16 100%); height: 150px; border-radius: 10px; margin-bottom: 14px; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid rgba(239, 68, 68, 0.4); position: relative; overflow: hidden; box-shadow: inset 0 0 20px rgba(239, 68, 68, 0.15); padding: 10px;">
                     
@@ -486,10 +486,10 @@
                 </div>
                 
                 <h3>Real-Time Fall Detection System</h3>
-                <p>An intelligent computer vision system that tracks skeletal keypoints using MediaPipe to detect human falls in real-time and instantly sends emergency photo alerts via Telegram.</p>
-                
-                <div class="project-links" style="margin-top: 15px; display: flex; gap: 10px;">
-                    <a href="https://github.com/hajar-benhadj/Fall_Detection_System/" target="_blank" class="btn primary" style="padding: 8px 15px; font-size: 14px; background: linear-gradient(135deg, #ef4444, #dc2626); color: white; text-decoration: none; border-radius: 6px; display: inline-flex; align-items: center; gap: 5px;">View Repo 🚀</a>
+                <span class="card-hint">Hover for details <span class="arr">→</span></span>
+                <div class="card-reveal">
+                An intelligent computer vision system that tracks skeletal keypoints using MediaPipe to detect human falls in real-time and instantly sends emergency photo alerts via Telegram.
+                <div class="project-links"><a href="https://github.com/hajar-benhadj/Fall_Detection_System/" target="_blank" class="p-btn" style="--pa1: #f87171; --pa2: #dc2626;">View Repo 🚀 <span class="arr">→</span></a></div>
                 </div>
             </div>
 
